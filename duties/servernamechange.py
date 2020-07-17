@@ -17,4 +17,5 @@ class ServerNameChange(commands.Cog):
         
         kanji = ''.join([self.kanji_table[s] for s in str(num)]) + '（仮）'
         logging.info(f'Server name changed to {kanji} by command.')
+        ctx.send(f'サーバ名を「{kanji}」に変更したよ！')
         await ctx.guild.edit(name=kanji)
