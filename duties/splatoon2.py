@@ -8,11 +8,11 @@ import requests
 '''
 スプラトゥーン2絡みのコマンド
 '''
-class Splatoon2(commands.Cog, name="スプラトゥーン2"):
+class Splatoon2(commands.Cog, name='スプラトゥーン2'):
     def __init__(self, bot):
         self.bot = bot
     
-    @commands.command(name="SalmonSchedule")
+    @commands.command(name='バイトシフト')
     async def say_salmon_schedule(self, ctx):
         '''サーモンランのスケジュールを出す'''
         url = 'https://spla2.yuu26.com/coop/schedule'

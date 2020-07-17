@@ -11,7 +11,7 @@ class ServerNameChange(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
     
-    @commands.command()
+    @commands.command(name='サーバ名自動変更')
     async def name_change(self, ctx):
         num = random.randint(1, 100)
         
